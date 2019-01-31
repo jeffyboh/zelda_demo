@@ -4,7 +4,7 @@
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://enemies/stalfos.tscn" type="PackedScene" id=3]
 
-[node name="Node" type="Node"]
+[node name="Node" type="Node" index="0"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -34,5 +34,17 @@ position = Vector2( 87.3505, 78.2395 )
 [node name="stalfos" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 54.8159, 43.2491 )
+
+[node name="stalfos2" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 33.7628, 30.6935 )
+
+[node name="stalfos3" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 90.2389, 32.5351 )
+
+[node name="stalfos4" parent="." index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 41.7432, 54.0205 )
 
 
