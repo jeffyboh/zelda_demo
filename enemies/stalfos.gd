@@ -8,7 +8,7 @@ var movetimer = 0
 
 func _ready():
 	$anim.play("default")
-	moveDir = dir.rand()
+	movedir = dir.rand()
 
 func _physics_process(delta):
 	movement_loop()
@@ -17,6 +17,6 @@ func _physics_process(delta):
 	if movetimer >= 0:
 		movetimer -= 1
 	if movetimer == 0 || is_on_wall():
-		moveDir = dir.rand()
+		movedir = dir.rand()
 		movetimer = movetimer_lengh
 
